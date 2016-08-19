@@ -66,6 +66,7 @@ public class SQLUtils {
         res += ":";
         res += port != 0 ? port : "";
         res += dbname != null ? "/" + dbname : "";
+        System.out.println("SQLUtils:getUrl=" + res);
         return res;
     }
 }
